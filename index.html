@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Management</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="#"/>
+	<meta name="keyword" content="#"/>
+	<meta name="authors" content="#"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/menuStyle.css">
+	<script type="text/javascript" src="js/valid.js"></script>
+		<!---------INTERNAL CSS AND JAVASCRIPT-------->
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript">
+		function openNav() 
+		{
+			var x=document.getElementById("menu");
+			if (x.style.display == "none") 
+			{
+				x.style.display = "block";
+			}
+			else
+			{
+				x.style.display = "none";
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div class="container">
+		<!--------WRAPPER---------->
+		<div class="wrapper">
+		<!----------Login Box---------->
+		<div class="outer-box" id="main">	
+			<div class="box">
+				<div class="vertical">
+					<div class="inner-vertical"></div>
+				</div>
+				<form action="logcheck.php" method="post">
+					<input type="text" name="txtemial" id="email" placeholder="Username.." required />
+					<input type="Password" name="txtpass" id="pass" placeholder="Password.." required />
+					<input type="submit" value="Login" />
+				</form>	
+			</div>
+		</div>
+		</div>
+		<span style="position: absolute;color:cyan;font-size: 40px; top:50px; right:60px;cursor:pointer;" onclick="openNav();">
+		&#9776;</span>
+		<div id="menu">
+			<div  id="myMenu" >
+				<div class="angle" id="right-top-angle" ></div>
+				<div class="angle" id="left-top-angle" ></div>
+				<div class="angle" id="right-bottom-angle" ></div>		
+				<div class="angle" id="left-bottom-angle" ></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

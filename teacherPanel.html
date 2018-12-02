@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CMS: TEACHER PANEL</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/teacherpanel.css"/>
+	<link type="icon/png" rel="icon" href="images/icon.png"/>
+	<script type="text/javascript">
+
+			function openTab(evt, pageName)
+			{
+				var i,tabcontent,menu,rightmenu;
+				tabcontent = document.getElementsByClassName("inner-tabcontent");
+				for(i = 0; i < tabcontent.length; i++)
+				{
+					tabcontent[i].style.display = 'none';
+				}
+				menu = document.getElementsByClassName("menu");
+				for(i = 0; i < menu.length; i++)
+				{
+					menu[i].className = menu[i].className.replace(" active", "");
+						
+				}
+				rightmenu = document.getElementsByClassName("right-menu");
+						for(i = 0; i < menu.length; i++)
+						{
+							rightmenu[i].className = rightmenu[i].className.replace(" active", "");
+						}
+				document.getElementById(pageName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+</head>
+<body>
+	<div class="container">
+			<div class="wrapper">
+				<!-----------HEADER-BOX--------------->
+				<div class="header-menu">
+					<div class="logo">
+						<img src="images/finallogo3.png"title="ARYABHATA GROUP OF COLLEGE" style="width:100%;height:auto;opacity:0.5;"/>
+					</div>
+					<div class="logout"> 
+						<img src="images/logout.png" width="100%" height="100%"/><span style="color:orange">Log out</span>
+					</div>
+				</div>
+				<!-----------LEFT-BOX----------------->
+				<div class="left-side-menu">
+					<div class="menu active" onclick="openTab(event,'profile')">
+						<span class="text">my profile</span>
+						<div class="upper-cut">
+							<div class="inner-cut"></div>
+						</div>
+					</div>
+					<div class="menu " onclick="openTab(event,'stdassignment')">
+						<span class="text"style="margin-top:-8px;">Student</br>Assignment</span>
+						<div class="upper-cut">
+							<div class="inner-cut"></div>
+						</div>
+					</div>
+					<div class="menu " onclick="openTab(event,'events')">
+						<span class="text">Events</span>
+						<div class="upper-cut">
+							<div class="inner-cut"></div>
+						</div>
+					</div>
+					<div class="menu " onclick="openTab(event,'tasks')">
+						<span class="text">Tasks</span>
+						<div class="upper-cut">
+							<div class="inner-cut"></div>
+						</div>
+					</div>
+					<div class="menu " onclick="openTab(event,'onlineexam')">
+						<span class="text">Online Exam</span>
+						<div class="upper-cut">
+							<div class="inner-cut"></div>
+						</div>
+					</div>
+					<div class="menu " onclick="openTab(event,'googledocs')">
+						<span class="text">Google Docs</span>
+						<div class="upper-cut">
+							<div class="inner-cut"></div>
+						</div>
+					</div>
+					<div class="menu " onclick="openTab(event,'forms')">
+						<span class="text">Forms</span>
+						<div class="upper-cut">
+							<div class="inner-cut"></div>
+						</div>
+					</div>
+				</div>
+<!---------------------------MAIN-BOX----------------------------->
+				<div class="main-box">
+				<!----------------------PROFILE------------------>	
+					<div class="inner-tabcontent" id="profile">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------Student ASSIGNMENT------------------>	
+					<div class="inner-tabcontent" id="stdassignment">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>	
+				<!----------------------Student ASSIGNMENT------------------>	
+					<div class="inner-tabcontent" id="stdassignment">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------EVENTS------------------------------>	
+					<div class="inner-tabcontent" id="events">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------TASKS------------------------>	
+					<div class="inner-tabcontent" id="tasks">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------ONLINE EXAMS------------------>	
+					<div class="inner-tabcontent" id="onlineexam">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------GOOGLE DOCS------------------>	
+					<div class="inner-tabcontent" id="googledocs">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------FORMS------------------>	
+					<div class="inner-tabcontent" id="forms">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!---------------------FEES--------------------->	
+					<div class="inner-tabcontent" id="fees">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------EXAM------------------>	
+					<div class="inner-tabcontent" id="exam">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------LIBRARY------------------>	
+					<div class="inner-tabcontent" id="library">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------STUDENT RECORD------------------>	
+					<div class="inner-tabcontent" id="studentRecord">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------LEAVE------------------>	
+					<div class="inner-tabcontent" id="leave">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------ATTENDENCE------------------>	
+					<div class="inner-tabcontent" id="attendence">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------REVIEWS------------------>	
+					<div class="inner-tabcontent" id="reviews">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+				<!----------------------FORMS------------------>	
+					<div class="inner-tabcontent" id="forms">
+						<div class="emp-name-box">
+							<div class="inner-top-cut"></div>
+							<div class="inner-left-cut"></div>
+							<label class="emp-name">[ Name ]</label>
+							<span class="emp-code"> Suyash dasnani</span>
+						</div>
+					</div>
+
+				</div>
+
+<!---------------------------------------------------------------->
+				<div class="right-side-menu">
+					<div class="right-menu" onclick="openTab(event,'fees')">
+						<span class="right-text">Fees</span>
+						<div class="right-upper-cut">
+							<div class="right-inner-cut"></div>
+						</div>
+					</div>
+					<div class="right-menu " onclick="openTab(event,'exam')">
+						<span class="right-text">Exam</span>
+						<div class="right-upper-cut">
+							<div class="right-inner-cut"></div>
+						</div>
+					</div>
+					<div class="right-menu " onclick="openTab(event,'library')">
+						<span class="right-text">library</span>
+						<div class="right-upper-cut">
+							<div class="right-inner-cut"></div>
+						</div>
+					</div>
+					<div class="right-menu " onclick="openTab(event,'studentRecord')">
+						<span class="right-text" style="margin-top: -5px;">Student</br> Record</span>
+						<div class="right-upper-cut">
+							<div class="right-inner-cut"></div>
+						</div>
+					</div>
+					<div class="right-menu" onclick="openTab(event,'leave')">
+						<span class="right-text">Leave</span>
+						<div class="right-upper-cut">
+							<div class="right-inner-cut"></div>
+						</div>
+					</div>
+					<div class="right-menu " onclick="openTab(event,'attendence')">
+						<span class="right-text">Attendence</span>
+						<div class="right-upper-cut">
+							<div class="right-inner-cut"></div>
+						</div>
+					</div>
+					<div class="right-menu" onclick="openTab(event,'reviews')">
+						<span class="right-text">reviews</span>
+						<div class="right-upper-cut">
+							<div class="right-inner-cut"></div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
